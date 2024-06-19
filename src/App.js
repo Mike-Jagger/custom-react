@@ -7,12 +7,13 @@ const App = () => {
       <div className="text-wrapper">
         Enhance The Way You Build Your&nbsp;
         <div className="text-container">
-          <div className="text-slide">
-            <div className="text">SAAS Business</div>
-            <div className="text">Tech Startup</div>
-            <div className="text">E-commerce Platform</div>
-            <div className="text">Digital Agency</div>
-          </div>
+          <p className="rotatingText-description">
+            Enhance The Way You Build Your...
+          </p>
+          <h2 className="rotatingText-adjective">SAAS Business</h2>
+          <h2 className="rotatingText-adjective">Tech Startup</h2>
+          <h2 className="rotatingText-adjective">E-commerce Platform</h2>
+          <h2 className="rotatingText-adjective">Digital Agency</h2>
         </div>
       </div>
       <p className="description">
