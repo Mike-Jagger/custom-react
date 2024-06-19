@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import './App.css'; // Import the CSS file for animations
 
-function App() {
+const textList = [
+  "SAAS Business",
+  "Tech Startup",
+  "E-commerce Platform",
+  "Digital Agency",
+];
+
+const App = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % textList.length);
+    }, 3000); // Change text every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="text-container">
+        <div className="text">{textList[index]}</div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
