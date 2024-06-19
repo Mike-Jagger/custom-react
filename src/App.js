@@ -5,11 +5,8 @@ const App = () => {
   return (
     <div className="container">
       <div className="text-wrapper">
-        Enhance The Way You Build Your&nbsp;
+        <span>Enhance The Way You Build Your&nbsp;</span>
         <div className="text-container">
-          <p className="rotatingText-description">
-            Enhance The Way You Build Your...
-          </p>
           <h2 className="rotatingText-adjective">SAAS Business</h2>
           <h2 className="rotatingText-adjective">Tech Startup</h2>
           <h2 className="rotatingText-adjective">E-commerce Platform</h2>
