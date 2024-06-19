@@ -6,11 +6,13 @@ const App = () => {
     <div className="container">
       <div className="text-wrapper">
         <span>Enhance The Way You Build Your&nbsp;</span>
-        <div className="text-container">
-          <h2 className="rotatingText-adjective">SAAS Business</h2>
-          <h2 className="rotatingText-adjective">Tech Startup</h2>
-          <h2 className="rotatingText-adjective">E-commerce Platform</h2>
-          <h2 className="rotatingText-adjective">Digital Agency</h2>
+        <div className="words">
+          <div className="word"></div>
+          <div className="word">SAAS Business</div>
+          <div className="word">Tech Startup</div>
+          <div className="word">E-commerce Platform</div>
+          <div className="word">Digital Agency</div>
+          <div className="word">SAAS Business</div>
         </div>
       </div>
       <p className="description">
