@@ -14,15 +14,22 @@ const App = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % textList.length);
-    }, 3000); // Change text every 3 seconds
+    }, 3500); // Change text every 3 seconds
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="container">
-      <div className="text-container">
-        <div className="text">{textList[index]}</div>
+      <div className="text-wrapper">
+        Enhance The Way You Build Your&nbsp;
+        <div className="text-container">
+          <div className="text">{textList[index]}</div>
+        </div>
       </div>
+      <p className="description">
+        Welcome to unrCrew, where innovation meets simplicity. We are dedicated
+        to providing best solutions for your business
+      </p>
     </div>
   );
 };
